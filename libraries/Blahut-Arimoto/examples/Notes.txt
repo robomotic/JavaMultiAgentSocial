@@ -1,0 +1,34 @@
+**Example Test Files for the Anonymity Engine**
+
+This directory contains example files that can be analysed using the Anonymity Engine tool. To analyse a file using the program "ae.jar" type:
+
+java -jar ae.jar <fileName>
+
+at the command line. Include the paths to ae.jar and the file if they are not in the same directory. 
+
+
+*Example Channel Files*
+
+The channels direction contains example probability transmission matrix files. 
+
+The Channels/TextBookInfoTheory directory contains classic example channels discussed in chapter 8 of "Elements of Information Theory" by Cover and Thomas.
+
+The Channels/DiningCryptos directory contains probability transmission matrix for the Dining Cryptographers Protocol. The prefix "dcN" indicates N cryptographers and:
+
+ - "fair" means that all coins are fair.
+ - "allbias" that all coins come up heads with prob. 0.75
+ - "twoBias" that two of the coins come up heads with prob. 0.8
+ - nopay includes the possibility that no one paid, and allows this 
+   as side information.
+
+The Channels/Mixes directory contains  probability transmission matrices for which model the single firing of a pool and threshold mix. Each example has only 3 senders and 3 receives. The conditional versions allow the source and destination as side information and therefore only test linkablility.
+
+*Example Sample Files*
+
+The TestRuns directory contains the results of running tests on a number of example programs.
+
+ - DCgood: contains the results of testing a correct implementation of the Dining Cryptographers protocol.
+
+ - DCbias: containts the results of testing an implementation of the Dining Cryptographers protocol, where the coins come up heads with probability 0.75.
+
+ - Mixminion, contains the results of trial runs of a mixminion mix node. Tests where performed on a single firer of a node that received 3 messages to 3 different destination. A packet sniffer was used to find the order in which the messages left the mix. This test shows that in this special case the order in which messages leave the mix is unaffected by the order in which message enter the mix.

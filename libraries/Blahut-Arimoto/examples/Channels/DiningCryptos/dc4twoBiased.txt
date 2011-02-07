@@ -1,0 +1,7 @@
+// 4 dining cryptographers coins 2 and 3 p(head)= 0.8, c1 and c4 are fair
+
+ (4,8) | DAAA | ADAA | AADA | AAAD | DDDA | DDAD | DADD | ADDD
+user1  | 0.17 | 0.08 | 0.17 | 0.17 | 0.08 | 0.08 | 0.17 | 0.08
+user2  | 0.08 | 0.17 | 0.08 | 0.08 | 0.17 | 0.17 | 0.08 | 0.17 
+user3  | 0.17 | 0.08 | 0.17 | 0.17 | 0.08 | 0.08 | 0.17 | 0.08
+user4  | 0.17 | 0.08 | 0.17 | 0.17 | 0.08 | 0.08 | 0.17 | 0.08
